@@ -38,7 +38,9 @@ def requesthandle( link, name ):
     THREAD_COUNTER -= 1
 
 def main():
-    html = get_source( "https://www.drivespark.com/wallpapers/" )
+    path1 = "https://drive.google.com/drive/folders/1tsNzkpVvfbEQDVOFTuverce1CqBUWSYC/"
+    path2 = "https://www.drivespark.com/wallpapers/"
+    html = get_source(path1)
     tags = filter( html )
     for tag in tags:
         src = tag.get( "src" )
